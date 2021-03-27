@@ -1,0 +1,13 @@
+{
+	"name": "ls_covid_reporting_project_dl",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This Linked Services is created for azure data lake \"covidreportingprojectdl\"",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://covidreportingprojectdl.dfs.core.windows.net",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkFERkNPVklEMTlQUk9KRUNUXzAxNmY1NTc1LWUzNTctNDY1Mi04N2EwLWQzNGU3OTRhYzJhYyINCn0="
+		}
+	}
+}
