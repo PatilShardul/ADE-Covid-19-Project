@@ -1,0 +1,13 @@
+{
+	"name": "ls_ecdc_coviddata_europe",
+	"properties": {
+		"description": "This LinkService is created to a get the data on european covid data from ecdc link",
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://github.com/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
