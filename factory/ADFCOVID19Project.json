@@ -1,0 +1,9 @@
+{
+	"name": "ADFCOVID19Project",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "803f98bf-0e5d-45eb-be4c-dbf0292e9b58",
+		"tenantId": "8ae1486e-b689-4e4b-8747-9d95a4e72775"
+	}
+}
