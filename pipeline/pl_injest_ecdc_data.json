@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "Lookup ECDC File List",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -121,7 +121,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Lookup1",
+						"activity": "Lookup ECDC File List",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -130,7 +130,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Lookup1').output.value",
+						"value": "@activity('Lookup ECDC File List').output.value",
 						"type": "Expression"
 					},
 					"isSequential": true,
