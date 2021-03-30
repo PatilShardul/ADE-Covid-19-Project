@@ -1,0 +1,17 @@
+{
+	"name": "trg_ingest_ECDC_data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2021-03-30T14:11:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
