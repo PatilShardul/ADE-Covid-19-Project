@@ -34,18 +34,6 @@
 				}
 			},
 			{
-				"name": "If Condition1",
-				"type": "IfCondition",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"expression": {
-						"value": "@equals(1,3)",
-						"type": "Expression"
-					}
-				}
-			},
-			{
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [
@@ -64,19 +52,6 @@
 					},
 					"isSequential": true,
 					"activities": [
-						{
-							"name": "Set variable1",
-							"type": "SetVariable",
-							"dependsOn": [],
-							"userProperties": [],
-							"typeProperties": {
-								"variableName": "sourceRelativeURL",
-								"value": {
-									"value": "@item().sourceRelativeURL",
-									"type": "Expression"
-								}
-							}
-						},
 						{
 							"name": "Copy ECDC Data",
 							"type": "Copy",
@@ -127,7 +102,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"relativeURL": {
-											"value": "@pipeline().parameters.sourceRelativeURL",
+											"value": "@item().sourceRelativeURL",
 											"type": "Expression"
 										}
 									}
@@ -139,7 +114,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"fileName": {
-											"value": "@pipeline().parameters.sinkFileName",
+											"value": "@item().sinkFileName",
 											"type": "Expression"
 										}
 									}
@@ -219,19 +194,6 @@
 				]
 			}
 		],
-		"parameters": {
-			"sourceRelativeURL": {
-				"type": "string"
-			},
-			"sinkFileName": {
-				"type": "string"
-			}
-		},
-		"variables": {
-			"sourceRelativeURL": {
-				"type": "String"
-			}
-		},
 		"annotations": []
 	}
 }
