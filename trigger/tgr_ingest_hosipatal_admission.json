@@ -1,0 +1,17 @@
+{
+	"name": "tgr_ingest_hosipatal_admission",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2021-03-30T11:02:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
